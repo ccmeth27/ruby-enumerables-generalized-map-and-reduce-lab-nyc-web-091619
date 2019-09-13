@@ -8,4 +8,4 @@ def reduce(array, starting_point = 0, &block)
 end
 reduce([1, 2, 3]) {|memo, n| memo + n}
 reduce([1, 2, 3], 100) {|memo, n| memo + n}
-reduce([ false, nil, nil, nil, true]) {|memo, n| memo || n}
+reduce([false, nil, nil, nil, true]) {|memo, n| memo || n}
