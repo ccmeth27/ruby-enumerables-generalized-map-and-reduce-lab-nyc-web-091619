@@ -8,6 +8,7 @@ def reduce(array, starting_point = nil, &block)
     array.reduce(&block)
   else
     array.reduce(starting_point, &block)
+  end
 end
 reduce([1, 2, 3], 0) {|memo, n| memo + n}
 reduce([1, 2, 3], 100) {|memo, n| memo + n}
