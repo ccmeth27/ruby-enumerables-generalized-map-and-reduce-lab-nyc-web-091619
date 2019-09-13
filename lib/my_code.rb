@@ -4,4 +4,6 @@ end
 map([1, 2, 3, -9]) {|n| n * -1}
 
 def reduce(array, &block)
-  array.reduce
+  array.reduce(&block)
+end
+reduce()
