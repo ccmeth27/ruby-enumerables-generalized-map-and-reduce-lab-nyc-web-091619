@@ -3,7 +3,7 @@ def map(array, &block)
 end
 map([1, 2, 3, -9]) {|n| n * -1}
 
-def reduce(array, starting_point = 0, &block)
+def reduce(array, starting_point, &block)
   array.reduce(&block)
 end
 reduce([1, 2, 3]) {|memo, n| memo + n}
